@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+
+.font-link {
+    font-family: 'Zen Dots', cursive;
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+
+/*TODO: Header Component */
+.navbar{
+    @apply
+        relative 
+        flex 
+        flex-wrap 
+        items-center 
+        justify-between 
+        px-2 
+        py-3 
+        border-b-2 
+        border-blue-200 
+        bg-blue-900 
+        mb-3
+        z-auto;
+    position: relative;
+    z-index: 999;
+    height: 62px;
+    width: 100%;
+        
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sticky-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+
+.navbar-two{
+    @apply 
+        container 
+        px-4 
+        mx-auto 
+        flex 
+        flex-wrap 
+        items-center 
+        justify-between
+}
+
+.navbar-svg{
+    @apply
+        w-full 
+        relative 
+        flex 
+        justify-between 
+        lg:w-auto 
+        lg:static 
+        lg:block 
+        lg:justify-start
+}
+
+.nav-link{
+    @apply
+        text-sm 
+        font-bold 
+        leading-relaxed 
+        inline-block 
+        mr-4 
+        py-2 
+        whitespace-nowrap 
+        uppercase 
+        text-blue-200 
+}
+
+.button-bar{
+    @apply
+        cursor-pointer 
+        text-blue-200
+        text-xl 
+        leading-none 
+        px-3 
+        py-1 
+        border 
+        border-solid 
+        border-transparent 
+        rounded 
+        bg-transparent 
+        block 
+        lg:hidden 
+        outline-none 
+        focus:outline-none
+}
+
+.ul-main{
+    @apply
+    flex 
+    flex-col 
+    lg:flex-row 
+    list-none 
+    lg:ml-auto
+     text-blue-200
+}
+
+.li-link{
+    @apply
+        px-3 
+        py-2 
+        flex 
+        items-center 
+        text-xs 
+        uppercase 
+        font-bold 
+        leading-snug  
+        hover:opacity-75
+}
+
+/*TODO: Home Component */
+.section {
+    @apply w-full p-6;
+}
+
+.section-title{
+    @apply w-48 mx-auto pt-6 border-b-2 border-orange-500 text-center text-2xl text-blue-700;
+}
+
+.section-subtitle {
+    @apply p-2 text-center text-lg text-gray-700;
+}
+
+.card{
+    @apply 
+        w-48 
+        m-4 
+        py-2 
+        bg-blue-900 
+        drop-shadow-lg
+        border-y-4
+        border-orange-600
+}
+
+.card-title {
+    @apply 
+        mx-2 
+        mt-2 
+        p-5
+        text-center 
+        text-lg 
+        text-white
+        font-semibold;
+}
+
+.card-icons {
+    @apply flex justify-center items-center mt-2;
+}
+
+.card-image {
+    @apply w-24 h-24 mx-auto rounded-full;
+}
+
+.card-Facilities{
+    @apply 
+        w-48 
+        m-4 
+        py-2 
+        drop-shadow-lg
+        bg-white
+}
+
+.card-Facilitie{
+    @apply mx-2 mt-2 text-center text-lg text-gray-700 font-semibold;
+}
+
+.card-Facilitie-sub{
+    @apply text-center text-gray-600;
+}
+
+/*TODO: Blog Component */
+.card-zoom {
+    @apply relative flex items-center justify-center  overflow-hidden shadow-xl w-full h-[320px];
+  }
+
+  .card-zoom-image {
+    @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+  }
+
+  .card-zoom:hover .card-zoom-image {
+    @apply scale-150;
+  }
+
+@tailwind utilities;
