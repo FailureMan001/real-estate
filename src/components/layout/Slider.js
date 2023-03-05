@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React,{useRef, useState} from 'react'
+import React from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,12 +13,12 @@ import "../layout/slider.css";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 
-import bg_1 from '../../img/bg-2.jpg'
-import bg_2 from '../../img/bg-3.jpg'
-import bg_3 from '../../img/bg-4.jpg'
-import bg_5 from '../../img/bg-5.jpg'
-import bg_6 from '../../img/bg-6.jpg'
-import bg_7 from '../../img/bg-7.jpg'
+import bg_1 from '../../assets/img/bg-2.jpg'
+import bg_2 from '../../assets/img/bg-3.jpg'
+import bg_3 from '../../assets/img/bg-4.jpg'
+import bg_5 from '../../assets/img/bg-5.jpg'
+import bg_6 from '../../assets/img/bg-6.jpg'
+import bg_7 from '../../assets/img/bg-7.jpg'
 
 const Slider = () => {
    

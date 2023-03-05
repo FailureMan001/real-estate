@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import background from "../../img/bg-9.png";
-import background_2 from "../../img/bg-0.jpg";
-import background_3 from "../../img/bg-8.jpg";
+import background from "../../assets/img/bg-9.png";
+import background_2 from "../..assets//img/bg-0.jpg";
+import background_3 from "../../assets/img/bg-8.jpg";
 const About = () => {
   return (
     <div className=" container mx-auto -mt-3">

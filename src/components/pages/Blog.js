@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import bg_0 from '../../img/img-10.jpg';
-import bg_1 from '../../img/img-11.jpg';
-import bg_2 from '../../img/img-12.jpg';
+import bg_0 from '../../assets/img/img-10.jpg';
+import bg_1 from '../../assets/img/img-11.jpg';
+import bg_2 from '../../assets/img/img-12.jpg';
 const Blog = () => {
   return (
     <div className='container mx-auto -mt-3'>

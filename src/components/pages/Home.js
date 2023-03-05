@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 
-import background from '../../img/bg-8.jpg';
-import bg_9 from '../../img/bg-9.png';
-import bg_icon from '../../img/cctv.png';
-import bg_icon_2 from '../../img/mansion.png';
-import bg_icon_3 from '../../img/family.png';
-import bg_icon_4 from '../../img/customer-service.png';
+import background from '../../assets/img/bg-8.jpg';
+import bg_9 from '../../assets/img/bg-9.png';
+import bg_icon from '../../assets/img/cctv.png';
+import bg_icon_2 from '../../assets/img/mansion.png';
+import bg_icon_3 from '../../assets/img/family.png';
+import bg_icon_4 from '../../assets/img/customer-service.png';
 
 import Slider from '../layout/Slider';
 const Home = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import bg_1 from "../../img/img-10.jpg";
-import bg_2 from "../../img/img-11.jpg";
-import img_00 from "../../img/img-12.jpg";
+import bg_1 from "../../assets/img/img-10.jpg";
+import bg_2 from "../../assets/img/img-11.jpg";
+import img_00 from "../../assets/img/img-12.jpg";
 
 const Blog_03 = () => {
   return (
