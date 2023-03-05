@@ -26,7 +26,7 @@ const Header = () => {
       <nav className={`navbar ${stickyClass}`}>
         <div className="navbar-two ">
           <div className="navbar-svg">
-            <Link className="nav-link" href="/">
+            <Link className="nav-link" to="/">
               <FontAwesomeIcon
                 icon={faCompassDrafting}
                 className="fa-2x text-orange-500"

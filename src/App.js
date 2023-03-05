@@ -12,6 +12,7 @@ import Blog_02 from './components/pages/Blog_02';
 import Blog_03 from './components/pages/Blog_03';
 import Contact from './components/pages/Contact';
 
+
 const App = () => {
   return (
     <div className='App'>

@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 
 import { BrowserRouter } from 'react-router-dom';
+import ImageContextProvider from './components/ImageContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-  </React.StrictMode>
+  <ImageContextProvider>
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  </ImageContextProvider>
 );
 

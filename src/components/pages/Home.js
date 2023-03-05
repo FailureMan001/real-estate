@@ -1,21 +1,22 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
+import React, { useContext } from 'react'
 
-import background from '../../assets/img/bg-8.jpg';
-import bg_9 from '../../assets/img/bg-9.png';
-import bg_icon from '../../assets/img/cctv.png';
-import bg_icon_2 from '../../assets/img/mansion.png';
-import bg_icon_3 from '../../assets/img/family.png';
-import bg_icon_4 from '../../assets/img/customer-service.png';
+import { ImageContext } from '../ImageContext';
 
 import Slider from '../layout/Slider';
 const Home = () => {
+  const data = useContext(ImageContext)
+
+  const result = data.imageData.map((e)=>{
+    return e.image
+  })
+
   return (
     <div className='container mx-auto -mt-3'>
       <div 
       className='flex lg:pt-[200px] lg:pb-[200px] bg-blue-100 bg-fixed' 
       style={{
-          backgroundImage:`url(${background})`,
+          backgroundImage:`url(${result[7]})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%"
         }}>
@@ -71,7 +72,7 @@ const Home = () => {
             <div className='w-full h-[350px] object-cover drop-shadow-2xl' 
       style={{
 
-          backgroundImage:`url(${bg_9})`,
+          backgroundImage:`url(${result[8]})`,
           backgroundRepeat: "no-repeat",
           
         }}
@@ -94,23 +95,23 @@ const Home = () => {
           <div className='flex justify-center flex-wrap'>
 
           <div className='card-Facilities'>
-            <img src={bg_icon_2} className='card-image '/>
+            <img src={result[13]} className='card-image '/>
             <p className='card-Facilitie'>MM</p>
             <p className='card-Facilitie-sub'>UI Design</p>
           </div>
 
           <div className='card-Facilities'>
-            <img src={bg_icon_3} className='card-image '/>
+            <img src={result[12]} className='card-image '/>
             <p className='card-Facilitie'>MM</p>
             <p className='card-Facilitie-sub'>UI Design</p>
           </div>
           <div className='card-Facilities'>
-            <img src={bg_icon_4} className='card-image '/>
+            <img src={result[11]} className='card-image '/>
             <p className='card-Facilitie'>MM</p>
             <p className='card-Facilitie-sub'>UI Design</p>
           </div>
           <div className='card-Facilities'>
-            <img src={bg_icon} className='card-image '/>
+            <img src={result[10]} className='card-image '/>
             <p className='card-Facilitie'>MM</p>
             <p className='card-Facilitie-sub'>UI Design</p>
           </div>

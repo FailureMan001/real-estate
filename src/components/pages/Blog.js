@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Link} from 'react-router-dom';
-import bg_0 from '../../assets/img/img-10.jpg';
-import bg_1 from '../../assets/img/img-11.jpg';
-import bg_2 from '../../assets/img/img-12.jpg';
+
+import { ImageContext } from '../ImageContext';
+
 const Blog = () => {
+  const data = useContext(ImageContext)
+
+  const result = data.imageData.map((e)=>{
+    return e.image
+  })
+ 
+  // console.log(result[0])
+ 
   return (
     <div className='container mx-auto -mt-3'>
       <div className="section bg-blue-100">
@@ -18,7 +26,7 @@ const Blog = () => {
             {/* Card 1 */}
             <div className='rounded overflow-hidden shadow-lg'>
               <Link to='/blog-01' className='card-zoom'>
-                <img src={bg_0} alt='Home' className='card-zoom-image bg-beetle'/>
+                <img src={result[23]} alt='Home' className='card-zoom-image bg-beetle'/>
               </Link>
               <div className='px-6 py-4'>
                 <div className='font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer'>
@@ -35,7 +43,7 @@ const Blog = () => {
             {/* Card 2 */}
             <div className='rounded overflow-hidden shadow-lg'>
               <Link to='/blog-02' className='card-zoom'>
-                <img src={bg_1} alt='Home' className='card-zoom-image bg-beetle'/>
+                <img src={result[24]} alt='Home' className='card-zoom-image bg-beetle'/>
               </Link>
               <div className='px-6 py-4'>
                 <div className='font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer'>
@@ -52,7 +60,7 @@ const Blog = () => {
             {/* Card 3 */}
             <div className='rounded overflow-hidden shadow-lg'>
               <Link to='/blog-03' className='card-zoom'>
-                <img src={bg_2} alt='Home' className='card-zoom-image bg-beetle'/>
+                <img src={result[25]} alt='Home' className='card-zoom-image bg-beetle'/>
               </Link>
               <div className='px-6 py-4'>
                 <div className='font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer'>

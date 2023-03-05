@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react'
+import React, { useContext } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,14 +13,15 @@ import "../layout/slider.css";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
 
-import bg_1 from '../../assets/img/bg-2.jpg'
-import bg_2 from '../../assets/img/bg-3.jpg'
-import bg_3 from '../../assets/img/bg-4.jpg'
-import bg_5 from '../../assets/img/bg-5.jpg'
-import bg_6 from '../../assets/img/bg-6.jpg'
-import bg_7 from '../../assets/img/bg-7.jpg'
+import { ImageContext } from '../ImageContext';
 
 const Slider = () => {
+
+  const data = useContext(ImageContext)
+
+  const result = data.imageData.map((e)=>{
+    return e.image
+  })
    
     return (
         <>
@@ -41,22 +42,22 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={bg_1} />
+          <img src={result[1]} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg_2} />
+          <img src={result[2]} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg_3} />
+          <img src={result[3]} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg_5} />
+          <img src={result[4]} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg_6} />
+          <img src={result[5]} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bg_7} />
+          <img src={result[6]} />
         </SwiperSlide>
       </Swiper>
     </>

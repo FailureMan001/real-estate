@@ -42,7 +42,7 @@ const Contact = () => {
           {/* About Column */}
           <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3063695786805!2d100.49338541527408!3d13.760389000800732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2996d6ec109b5%3A0xac746fc8006894b5!2z4Lin4Lix4LiU4LiK4LiZ4Liw4Liq4LiH4LiE4Lij4Liy4LihIOC4o-C4suC4iuC4p-C4o-C4oeC4q-C4suC4p-C4tOC4q-C4suC4ow!5e0!3m2!1sth!2sth!4v1677855875420!5m2!1sth!2sth"
+              src="https://bit.ly/3EYtKrh"
               width={600}
               height={450}
               allowFullScreen=""

@@ -1,10 +1,13 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Link } from "react-router-dom";
-import bg_1 from "../../assets/img/img-11.jpg";
-import bg_2 from "../../assets/img/img-12.jpg";
-import img_00 from "../../assets/img/img-10.jpg";
+import { ImageContext } from '../ImageContext';
 
 const Blog_01 = () => {
+  const data = useContext(ImageContext)
+
+  const result = data.imageData.map((e)=>{
+    return e.image
+  })
   
   return (
     <div className="container mx-auto -mt-3">
@@ -14,7 +17,7 @@ const Blog_01 = () => {
           Exlore our rich and diverse portfolio
         </div>
         <div className="flex items-center justify-center bg-blue-100">
-          <img src={img_00} alt="" className="shadow-xl" />
+          <img src={result[23]} alt="" className="shadow-xl" />
         </div>
 
         <div className="">
@@ -40,7 +43,7 @@ const Blog_01 = () => {
               <div className="rounded overflow-hidden shadow-lg">
                 <Link to="/blog-02" className="card-zoom">
                   <img
-                    src={bg_1}
+                    src={result[24]}
                     alt="Home"
                     className="card-zoom-image bg-beetle"
                   />
@@ -65,7 +68,7 @@ const Blog_01 = () => {
               <div className="rounded overflow-hidden shadow-lg">
                 <Link to="/blog-03" className="card-zoom">
                   <img
-                    src={bg_2}
+                    src={result[25]}
                     alt="Home"
                     className="card-zoom-image bg-beetle"
                   />
