@@ -26,7 +26,7 @@ const Header = () => {
       <nav className={`navbar ${stickyClass}`}>
         <div className="navbar-two ">
           <div className="navbar-svg">
-            <Link className="nav-link" to="/">
+            <Link to="/" className="nav-link" >
               <FontAwesomeIcon
                 icon={faCompassDrafting}
                 className="fa-2x text-orange-500"
@@ -50,22 +50,22 @@ const Header = () => {
           >
             <ul className="ul-main ">
               <li className="nav-item">
-                <Link className="li-link" to="/">
+                <Link  to="/" className="li-link">
                   <span className="ml-2">Home</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="li-link" to="/about">
+                <Link to="/about" className="li-link" >
                   <span className="ml-2  ">ABOUT US</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="li-link" to="/blog">
+                <Link to="/blog" className="li-link" >
                   <span className="ml-2  ">BLOG</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="li-link" to="/contact">
+                <Link to="/contact" className="li-link" >
                   <span className="ml-2  ">CONTACT US</span>
                 </Link>
               </li>
