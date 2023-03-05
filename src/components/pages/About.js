@@ -1,10 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useContext } from "react";
+import { ImageContext } from '../ImageContext';
 import background from "../../assets/img/bg-9.png";
 import background_2 from "../../assets/img/bg-0.jpg";
 import background_3 from "../../assets/img/bg-8.jpg";
 const About = () => {
-  
+  const data = useContext(ImageContext)
+
+  const result = data.imageData.map((e)=>{
+    return e.image
+  })  
   return (
     <div className=" container mx-auto -mt-3">
 
@@ -19,7 +24,7 @@ const About = () => {
 
           {/* About Column */}
           <div className='flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500'>
-            <img src={background_2} alt='' />
+            <img src={result[0]} alt='' />
 
           </div>
           {/* About Column */}
@@ -42,7 +47,7 @@ const About = () => {
           </div>
           {/* About Column */}
           <div className='flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500'>
-            <img src={background} alt='' />
+            <img src={result[8]} alt='' />
 
           </div>
         </div>
@@ -53,7 +58,7 @@ const About = () => {
 
           {/* About Column */}
           <div className='flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500'>
-            <img src={background_3} alt='' />
+            <img src={result[7]} alt='' />
 
           </div>
           {/* About Column */}
