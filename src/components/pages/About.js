@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useContext } from "react";
 import { ImageContext } from '../ImageContext';
-import background from "../../assets/img/bg-9.png";
-import background_2 from "../../assets/img/bg-0.jpg";
-import background_3 from "../../assets/img/bg-8.jpg";
+
 const About = () => {
   const data = useContext(ImageContext)
 
